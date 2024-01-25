@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff9f9;
+  font-family: "Poppins";
+}
+
+#main-header {
+  background-color: #333;
+  padding: 5px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-header h1 {
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+}
+
+#main-header a {
+  background-color: red;
+}
+
+#login {
+  color: #fff;
+}
+
+#second-header {
+  background-color: #808080;
+  padding: 10px 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#second-header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#second-header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#second-header a:hover {
+  color: #333;
+  transition: 0.2s;
+}
+
+#arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #4e4c4c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+#arrow-up:hover {
+  background-color: #555;
+}
+
+#sports {
+  position: flex;
+}
+
+#sports h2,
+#economy h2,
+#entertaiment h2,
+#revenues h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: #fff9f9;
+  font-size: 20px;
+}
+
+#box-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content {
+  padding: 0 6rem;
+}
+
+.sports-news,
+.economy-news,
+.entertaiment-news,
+.revenues-news {
+  display: flex;
+}
+
+.sports-news img,
+.entertaiment-news img {
+  width: 100%;
+  height: 60vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.sports-articles,
+.entertaiment-articles {
+  max-width: 50%;
+  margin: 0 16px;
+  background-color: #dfdfdf;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+
+.articles-content {
+  padding: 16px;
+}
+
+.section-background {
+  background-color: #808080;
+}
+
+.economy-articles,
+.revenues-articles {
+  max-width: 50%;
+  margin: 0 16px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+#economy h2,
+#revenues h2 {
+  color: #1f1f1f;
+}
+
+.economy-news img,
+.revenues-news img {
+  width: 100%;
+  height: 35vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.see-more {
+  text-decoration: none;
+  border: 1px solid;
+  border-color: #333;
+  border-radius: 6px;
+  padding: 4px 8px;
+  color:#333;
+  font-weight: 600;
+}
+
+.see-more:hover {
+  background-color: #333;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.2s;
+}
