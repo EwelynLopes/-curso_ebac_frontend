@@ -128,10 +128,12 @@ body {
 
 .articles-content {
   padding: 16px;
+  text-overflow: ellipsis;
 }
 
 .section-background {
   background-color: #808080;
+  padding: 8px 0;
 }
 
 .economy-articles,
@@ -161,7 +163,7 @@ body {
   border-color: #333;
   border-radius: 6px;
   padding: 4px 8px;
-  color:#333;
+  color: #333;
   font-weight: 600;
 }
 
@@ -169,5 +171,20 @@ body {
   background-color: #333;
   color: #fff;
   font-weight: 400;
-  transition: 0.2s;
+  transition: 0.6s;
+}
+
+#sports p,
+#economy p,
+#entertaiment p,
+#revenues p {
+  height: 100px;
+  overflow: hidden;
+}
+
+h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 225px;
 }
