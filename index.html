@@ -12,19 +12,18 @@
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <nav>
             <ul>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#adoption">Adoption</a></li>
-                <li><a href="#card-section">Card Section</a></li>
-                <li><a href="#card">Card</a></li>
-                <li><a href="#adopts">Adopts</a></li>
-                <li><a href="#help-us">Help Us</a></li>
-                <li><a href="#form">Form</a></li>
+                <li><a href="#about-us">Sobre nós</a></li>
+                <li><a href="#adoption">Adotados</a></li>
+                <li><a href="#adopts">Por que adotar</a></li>
+                <li><a href="#help-us">Como ajudar</a></li>
+                <li><a href="#form">Entre em contato</a></li>
             </ul>
         </nav>
-    </header> -->
+    </header>
+
     <section id="content">
         <section id="banner">
             <div id="banner-green">
@@ -44,7 +43,7 @@
     <section id="about-us">
         <div class="about-section">
             <div id="img-section-about">
-                <img src="happyfamily.jpg" alt="Familia com animais adotados" />
+                <img src=".assets/images/happyfamily.jpg" alt="Familia com animais adotados" />
             </div>
             <div class="text-section-about">
                 <h2 class="title">Sobre nós</h2>
@@ -237,7 +236,7 @@
                 </p>
             </div>
             <div id="img-section-adopts">
-                <img src="adopts.jpg" alt="Familia com animais adotados" />
+                <img src="./assets/images/adopts.jpg" alt="Familia com animais adotados" />
             </div>
         </div>
         <div class="banner-dark-pink"></div>
@@ -272,7 +271,7 @@
                 </p>
             </div>
             <div id="img-section-help">
-                <img src="QR.png" alt="QR Code" />
+                <img src="./assets/images/QR.png" alt="QR Code" />
                 <p>Faça sua doação através do QR Code</p>
             </div>
         </div>
@@ -303,11 +302,17 @@
         </div>
     </section>
 
-    <!-- <footer>
-        <p>&copy; 2024 Ong Aumigos Peludos. Todos os direitos reservados.</p>
-    </footer> -->
-
+    <footer>
+        <p>&copy; <span id="ano-atual"></span>Ong Aumigos Peludos. Todos os direitos reservados.</p>
+    </footer>
 </body>
+
+<script>
+    const anoElemento = document.getElementById('ano-atual');
+    const anoAtual = new Date().getFullYear();
+    
+    anoElemento.textContent = anoAtual;
+</script>
 
 <script>
     const elemento = document.getElementById("card-section");
