@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="phonebook.css">
+</head>
+
+<body>
+    <h1>Agenda de Contatos</h1>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Nome completo" title="Por favor, insira seu nome completo." required>
+        <input type="text" id="phone" placeholder="(xx) xxxxx-xxxx" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <div id="success-message" class="message hidden"></div>
+    <div id="remove-message" class="message hidden"></div>
+    <table id="contacts-table">
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Ação</th>
+        </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"></script>
+    <script src="phonebook.js"></script>
+</body>
+
+</html>
