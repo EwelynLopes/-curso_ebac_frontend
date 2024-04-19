@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #f0f0f0;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #c0c0c0, 
+               -5px -5px 15px #ffffff;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: inset 5px 5px 10px #d9d9d9, 
+                inset -5px -5px 10px #ffffff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#modalMensagem {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #c0c0c0, 
+               -5px -5px 15px #ffffff;
+}
+
+#modalMensagem p {
+    text-align: center;
+    font-weight: bold;
+    color: #4CAF50;
+}
