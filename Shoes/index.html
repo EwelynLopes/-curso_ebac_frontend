@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Novate Shoes</title>
+        <link rel="stylesheet" href="shoes.css">
+        <script src="shoes.js"></script>
+    </head>
+    
+<body>
+
+    <header class="header">
+        <h2>Novate</h2>
+    </header>
+
+    <div class="container">
+
+        <section class="about-section neumorphic-card">
+            <img src="assets/images/novate.jpeg" alt="logo marca da Loja" class="about-image">
+            <div class="about-text">
+                <h1>Sobre a Loja</h1>
+                <p>Bem-vindo à nossa loja de sapatos! Oferecemos uma ampla variedade de sapatos de alta qualidade para
+                    todos os gostos e estilos. Nossa missão é fornecer uma excelente experiência de compra para nossos
+                    clientes.</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Catálogo de Produtos</h2>
+            <div class="product-catalog">
+
+                <div class="product-card neumorphic-card">
+                    <img src="assets/images/tenisazul.png" alt="Sapato 1">
+                    <h3>Sapato 1</h3>
+                    <p>Descrição do sapato 1.</p>
+                    <button class="add-to-cart-btn neumorphic-button">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card neumorphic-card">
+                    <img src="assets/images/teniscolorido.png" alt="Sapato 2">
+                    <h3>Sapato 2</h3>
+                    <p>Descrição do sapato 2.</p>
+                    <button class="add-to-cart-btn neumorphic-button">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card neumorphic-card">
+                    <img src="assets/images/teniscinza.jpg" alt="Sapato 3">
+                    <h3>Sapato 3</h3>
+                    <p>Descrição do sapato 3.</p>
+                    <button class="add-to-cart-btn neumorphic-button">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card neumorphic-card">
+                    <img src="assets/images/teniscinzaazul.png" alt="Sapato 4">
+                    <h3>Sapato 4</h3>
+                    <p>Descrição do sapato 4.</p>
+                    <button class="add-to-cart-btn neumorphic-button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        &copy; <span id="year"></span> Novate. Todos os direitos reservados.
+    </footer>
+    
+</body>
+
+<script>
+
+    const currentYear = new Date().getFullYear();
+
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+</script>
+
+</html>
